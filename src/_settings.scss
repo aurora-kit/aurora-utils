@@ -1,1 +1,29 @@
 // aurora-utils :: Settings
+@import '../../aurora-shared/src/settings';
+
+/// Prefix for utilities (i.e 'u' ->' ae-u-*')
+$u: 'u';
+
+/// Important rule for utilities
+$ae-important: false;
+
+
+/// Display 
+$u-display: '';
+$ae-utils-display: inline inline-block block table table-cell flex inline-flex;
+
+/// Overflow
+$u-overflow: 'ov';
+$ae-utils-overflow: hidden auto scroll;
+
+/// Float
+$u-float: 'fl';
+$ae-utils-float: left right none;
+
+/// Max Width
+$u-max-width: 'mw';
+$ae-utils-max-width: (100%, full) auto;
+
+/// Text Align
+$u-text-align: 'ta';
+$ae-utils-text-align: left right center;

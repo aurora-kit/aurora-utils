@@ -1,0 +1,37 @@
+/// Utility Layout
+
+/// Display
+@include ae-helpers(display, $ae-utils-display, $u-display);
+
+/// Overflow
+@include ae-helpers(overflow, $ae-utils-overflow, $u-overflow);
+
+/// Float
+@include ae-helpers(float, $ae-utils-float, $u-float);
+
+/// Max Width
+@include ae-helpers(max-width, $ae-utils-max-width, $u-max-width);
+
+/// Text Align
+@include ae-helpers(text-align, $ae-utils-text-align, $u-text-align);
+
+/// Clearfix
+.#{$ae}-#{$u}-clearfix {
+  &:after,
+  &:before {
+    content: ' ';
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+
+
+
+
+
+
+

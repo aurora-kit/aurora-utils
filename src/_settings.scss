@@ -27,3 +27,15 @@ $ae-utils-max-width: (100%, full) none;
 /// Text Align
 $u-text-align: 'ta';
 $ae-utils-text-align: left right center justify;
+
+/// Position
+$u-position: 'pos';
+$ae-utils-position: absolute relative fixed static;
+
+/// Visibility
+$u-visibility: 'v';
+$ae-utils-visibility: hidden visible;
+
+/// Verical align
+$u-vertical-align: 'va';
+$ae-utils-vertical-align: baseline top middle bottom;

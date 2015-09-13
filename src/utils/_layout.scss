@@ -12,6 +12,15 @@
 /// Max Width
 @include ae-helpers(max-width, $ae-utils-max-width, $u-max-width);
 
+/// Position
+@include ae-helpers(position, $ae-utils-position, $u-position);
+
+/// Vsibility
+@include ae-helpers(visibility, $ae-utils-visibility, $u-visibility);
+
+/// Vertical align
+@include ae-helpers(vertical-align, $ae-utils-vertical-align, $u-vertical-align);
+
 /// Text Align
 @include ae-helpers(text-align, $ae-utils-text-align, $u-text-align);
 
@@ -34,6 +43,13 @@
   white-space: nowrap;
 }
 
+.#{$ae}-#{$u}-italic {
+  font-style: italic;
+}
+
+.#{$ae}-#{$u}-uppercase {
+  text-transform: uppercase;
+}
 
 
 

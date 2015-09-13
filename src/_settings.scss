@@ -2,40 +2,40 @@
 @import '../../aurora-shared/src/settings';
 
 /// Prefix for utilities (i.e 'u' ->' ae-u-*')
-$u: 'u';
+$u: 'u' !default;
 
 /// Important rule for utilities
-$ae-important: false;
+$ae-important: false !default;
 
 
 /// Display 
-$u-display: '';
-$ae-utils-display: inline inline-block block table table-cell flex inline-flex;
+$u-display: '' !default;
+$ae-utils-display: inline inline-block block table table-cell flex inline-flex !default;
 
 /// Overflow
-$u-overflow: 'ov';
-$ae-utils-overflow: hidden auto scroll;
+$u-overflow: 'ov' !default;
+$ae-utils-overflow: hidden auto scroll !default;
 
 /// Float
-$u-float: 'fl';
-$ae-utils-float: left right none;
+$u-float: 'fl' !default;
+$ae-utils-float: left right none !default;
 
 /// Max Width
-$u-max-width: 'mw';
-$ae-utils-max-width: (100%, full) none;
+$u-max-width: 'mw' !default;
+$ae-utils-max-width: (100%, full) none !default;
 
 /// Text Align
-$u-text-align: 'ta';
-$ae-utils-text-align: left right center justify;
+$u-text-align: 'ta' !default;
+$ae-utils-text-align: left right center justify !default;
 
 /// Position
-$u-position: 'pos';
-$ae-utils-position: absolute relative fixed static;
+$u-position: 'pos' !default;
+$ae-utils-position: absolute relative fixed static !default;
 
 /// Visibility
-$u-visibility: 'v';
-$ae-utils-visibility: hidden visible;
+$u-visibility: 'v' !default;
+$ae-utils-visibility: hidden visible !default;
 
 /// Verical align
-$u-vertical-align: 'va';
-$ae-utils-vertical-align: baseline top middle bottom;
+$u-vertical-align: 'va' !default;
+$ae-utils-vertical-align: baseline top middle bottom !default;

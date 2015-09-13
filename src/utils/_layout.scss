@@ -28,7 +28,7 @@
 @include ae-helpers(text-align, $ae-utils-text-align, $u-text-align);
 
 /// Clearfix
-.#{$ae}-#{$u}-clearfix {
+.#{$u}-clearfix {
   &:after,
   &:before {
     content: ' ';
@@ -40,17 +40,17 @@
   }
 }
 
-.#{$ae}-#{$u}-truncate {
+.#{$u}-truncate {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-.#{$ae}-#{$u}-italic {
+.#{$u}-italic {
   font-style: italic;
 }
 
-.#{$ae}-#{$u}-uppercase {
+.#{$u}-uppercase {
   text-transform: uppercase;
 }
 

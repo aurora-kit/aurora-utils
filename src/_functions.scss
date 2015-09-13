@@ -10,12 +10,12 @@
     
     @if $responsive {
       @include apply-in-breakpoints() {
-        .#{$ae}-#{$u}-#{$_bp}#{$px}#{$sel-val} {
+        .#{$u}-#{$_bp}#{$px}#{$sel-val} {
           #{$helper}: if($important, $attr-val !important, $attr-val);
         }
      }
     } @else {
-      .#{$ae}-#{$u}#{$px}#{$sel-val} {
+      .#{$u}#{$px}#{$sel-val} {
         #{$helper}: if($important, $attr-val !important, $attr-val);
       }
     }

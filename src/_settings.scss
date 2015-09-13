@@ -14,7 +14,7 @@ $ae-utils-responsive: false !default;
 
 /// Display 
 $u-display: '' !default;
-$ae-utils-display: inline inline-block block table table-cell flex inline-flex !default;
+$ae-utils-display: noneinline inline-block block table table-cell flex inline-flex none !default;
 
 /// Overflow
 $u-overflow: 'ov' !default;
@@ -44,6 +44,18 @@ $ae-utils-visibility: hidden visible !default;
 $u-vertical-align: 'va' !default;
 $ae-utils-vertical-align: baseline top middle bottom !default;
 
-/// Margin
-$u-margin: 'm' !default;
-$ae-utils-margin: auto (.5rem, 1) (1rem, 2) (2rem, 3) (4rem, 4) !default;
+/// Margins
+$ae-utils-margins: 0 (.5rem, 1) (1rem, 2) (2rem, 3) (4rem, 4) !default;
+$u-margin:        'm' !default;
+$u-margin-top:    'mt' !default;
+$u-margin-right:  'mr' !default;
+$u-margin-bottom: 'mb' !default;
+$u-margin-left:   'ml' !default;
+
+/// Paddings
+$ae-utils-paddings: 0 (.5rem, 1) (1rem, 2) (2rem, 3) (4rem, 4) !default;
+$u-padding:        'p' !default;
+$u-padding-top:    'pt' !default;
+$u-padding-right:  'pr' !default;
+$u-padding-bottom: 'pb' !default;
+$u-padding-left:   'pl' !default;

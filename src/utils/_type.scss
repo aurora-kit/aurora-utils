@@ -1,0 +1,23 @@
+/// Utility Type
+
+/// Text Align
+@include ae-helpers(text-align, $ae-utils-text-align, $u-text-align);
+
+.#{$u}-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.#{$u}-italic {
+  font-style: italic;
+}
+
+.#{$u}-uppercase {
+  text-transform: uppercase;
+}
+
+
+
+
+

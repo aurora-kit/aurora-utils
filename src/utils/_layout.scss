@@ -21,6 +21,9 @@
 /// Vertical align
 @include ae-helpers(vertical-align, $ae-utils-vertical-align, $u-vertical-align);
 
+/// Margin
+@include ae-helpers(margin, $ae-utils-margin, $u-margin);
+
 /// Text Align
 @include ae-helpers(text-align, $ae-utils-text-align, $u-text-align);
 

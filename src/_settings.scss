@@ -4,6 +4,7 @@
 /// Prefix for utilities (i.e 'u' ->' ae-u-*')
 $u: 'u' !default;
 
+
 /// Important rule for utilities
 $ae-important: false !default;
 
@@ -42,3 +43,7 @@ $ae-utils-visibility: hidden visible !default;
 /// Verical align
 $u-vertical-align: 'va' !default;
 $ae-utils-vertical-align: baseline top middle bottom !default;
+
+/// Margin
+$u-margin: 'm' !default;
+$ae-utils-margin: auto (.5rem, 1) (1rem, 2) (2rem, 3) (4rem, 4) !default;

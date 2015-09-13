@@ -1,14 +1,24 @@
 // aurora-utils :: Functions
+@import '../../aurora-shared/src/functions';
 
-@mixin ae-helpers($helper, $values, $prefix, $important: $ae-important) {
+@mixin ae-helpers($helper, $values, $prefix, $important: $ae-important, $responsive: $ae-utils-responsive) {
   $px: if($prefix != '', '-#{$prefix}-', '-');
   
   @each $value in $values {
     $sel-val: if(type-of($value) == list, nth($value, 2), $value);
     $attr-val: if(type-of($value) == list, nth($value, 1), $value);
     
-    .#{$ae}-#{$u}#{$px}#{$sel-val} {
-      #{$helper}: if($important, $attr-val !important, $attr-val);
+    @if $responsive {
+      @include apply-in-breakpoints() {
+        .#{$ae}-#{$u}-#{$_bp}#{$px}#{$sel-val} {
+          #{$helper}: if($important, $attr-val !important, $attr-val);
+        }
+     }
+    } @else {
+      .#{$ae}-#{$u}#{$px}#{$sel-val} {
+        #{$helper}: if($important, $attr-val !important, $attr-val);
+      }
     }
+
   }
 }

@@ -7,6 +7,9 @@ $u: 'u' !default;
 /// Important rule for utilities
 $ae-important: false !default;
 
+/// Apply each util per breakpoint
+$ae-utils-responsive: false !default;
+
 
 /// Display 
 $u-display: '' !default;

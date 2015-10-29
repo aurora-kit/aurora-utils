@@ -4,21 +4,23 @@
 @mixin ae-helpers($helper, $values, $prefix, $important: $ae-important, $responsive: $ae-utils-responsive) {
   $px: if($prefix != '', '-#{$prefix}-', '-');
   
-  @each $value in $values {
-    $sel-val: if(type-of($value) == list, nth($value, 2), $value);
-    $attr-val: if(type-of($value) == list, nth($value, 1), $value);
-    
-    @if $responsive {
-      @include apply-in-breakpoints() {
+  @if $responsive {
+    @include apply-in-breakpoints() {
+      @each $value in $values {
+        $sel-val: if(type-of($value) == list, nth($value, 2), $value);
+        $attr-val: if(type-of($value) == list, nth($value, 1), $value);
         .#{$u}-#{$_bp}#{$px}#{$sel-val} {
           #{$helper}: if($important, $attr-val !important, $attr-val);
         }
-     }
-    } @else {
+      }
+    } // @bps
+  } @else {
+    @each $value in $values {
+      $sel-val: if(type-of($value) == list, nth($value, 2), $value);
+      $attr-val: if(type-of($value) == list, nth($value, 1), $value);
       .#{$u}#{$px}#{$sel-val} {
         #{$helper}: if($important, $attr-val !important, $attr-val);
       }
     }
-
   }
 }

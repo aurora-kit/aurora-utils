@@ -1,7 +1,7 @@
 /// Utility Type
 
 /// Text Align
-@include ae-helpers(text-align, $ae-utils-text-align, $u-text-align);
+@include ae-helpers(text-align, $ae-utils-text-align, $u-text-align, $responsive: true);
 
 .#{$u}-truncate {
   overflow: hidden;

@@ -2,7 +2,7 @@
 
 /// Display
 @include ae-helpers(display, $ae-utils-display, $u-display);
-@include ae-helpers(display, $ae-utils-display, $u-display, $responsive: true, $between: true);
+@include ae-helpers(display, $ae-utils-display, $u-display, $responsive: true);
 
 /// Overflow
 @include ae-helpers(overflow, $ae-utils-overflow, $u-overflow);

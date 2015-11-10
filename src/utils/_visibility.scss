@@ -1,3 +1,4 @@
 /// Utility Visibility
 
 @include ae-helpers(visibility, $ae-utils-visibility, $u-visibility);
+@include ae-helpers(visibility, $ae-utils-visibility, $u-visibility, $responsive: true);

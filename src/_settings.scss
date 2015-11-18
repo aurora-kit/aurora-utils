@@ -59,3 +59,25 @@ $u-padding-top:    'pt' !default;
 $u-padding-right:  'pr' !default;
 $u-padding-bottom: 'pb' !default;
 $u-padding-left:   'pl' !default;
+
+
+/// Rhythm Spaces
+$ae-utils-column-spaces: ();
+$u-cols: 12;
+@for $i from 1 through $u-cols {
+  $ae-utils-column-spaces: append($ae-utils-column-spaces, (percentage($i / $u-cols), $i) )
+}
+
+$u-margin-perc:        'mp' !default;
+$u-margin-top-perc:    'mtp' !default;
+$u-margin-right-perc:  'mrp' !default;
+$u-margin-bottom-perc: 'mbp' !default;
+$u-margin-left-perc:   'mlp' !default;
+
+$u-padding-perc:        'pp' !default;
+$u-padding-top-perc:    'ptp' !default;
+$u-padding-right-perc:  'prp' !default;
+$u-padding-bottom-perc: 'pbp' !default;
+$u-padding-left-perc:   'plp' !default;
+
+

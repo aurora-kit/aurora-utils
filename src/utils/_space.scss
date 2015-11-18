@@ -27,3 +27,26 @@
 @include ae-helpers(padding-bottom, $ae-utils-paddings, $u-padding-bottom);
 /// Padding Left
 @include ae-helpers(padding-left, $ae-utils-paddings, $u-padding-left);
+
+
+/// Margin Percentage
+@include ae-helpers(margin, $ae-utils-column-spaces, $u-margin-perc);
+/// Margin Top Percentage
+@include ae-helpers(margin-top, $ae-utils-column-spaces, $u-margin-top-perc);
+/// Margin Right Percentage
+@include ae-helpers(margin-right, $ae-utils-column-spaces, $u-margin-right-perc);
+/// Margin Bottom Percentage
+@include ae-helpers(margin-bottom, $ae-utils-column-spaces, $u-margin-bottom-perc);
+/// Margin Left Percentage
+@include ae-helpers(margin-left, $ae-utils-column-spaces, $u-margin-left-perc);
+
+/// Padding Percentage
+@include ae-helpers(padding, $ae-utils-column-spaces, $u-padding-perc, $responsive: true);
+/// Padding Top Percentage
+@include ae-helpers(padding-top, $ae-utils-column-spaces, $u-padding-top-perc, $responsive: true);
+/// Padding Right Percentage
+@include ae-helpers(padding-right, $ae-utils-column-spaces, $u-padding-right-perc, $responsive: true);
+/// Padding Bottom Percentage
+@include ae-helpers(padding-bottom, $ae-utils-column-spaces, $u-padding-bottom-perc, $responsive: true);
+/// Padding Left Percentage
+@include ae-helpers(padding-left, $ae-utils-column-spaces, $u-padding-left-perc, $responsive: true);

@@ -3,6 +3,8 @@
 /// Text Align
 @include ae-helpers(text-align, $ae-utils-text-align, $u-text-align, $responsive: true);
 
+@include ae-helpers(line-height, $ae-utils-line-heights, $u-line-height);
+
 .#{$u}-truncate {
   overflow: hidden;
   text-overflow: ellipsis;

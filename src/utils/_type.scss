@@ -19,6 +19,10 @@
   text-transform: uppercase;
 }
 
+.#{$u}-lowercase {
+  text-transform: lowercase;
+}
+
 .#{$u}-underline {
   text-decoration: underline;
 }
